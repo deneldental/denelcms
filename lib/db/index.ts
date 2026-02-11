@@ -1,5 +1,3 @@
-import { config } from 'dotenv'
-config({ path: '.env.local' })
 import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
 import { DEFAULT_POOL_SIZE, DEFAULT_IDLE_TIMEOUT, DEFAULT_CONNECTION_TIMEOUT } from '../constants'
