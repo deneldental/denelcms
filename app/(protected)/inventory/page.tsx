@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { getInventoryItems } from '@/lib/actions/inventory'
 import { getInventoryLockStatus } from '@/lib/actions/settings'
 import { InventoryClient } from './inventory-client'

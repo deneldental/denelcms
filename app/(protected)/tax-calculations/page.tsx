@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 export default function TaxCalculationsPage() {
   return (
     <div className="flex flex-col gap-4">

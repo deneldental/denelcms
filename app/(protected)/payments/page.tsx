@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { getPayments } from '@/lib/actions/payments'
 import {
   getAllPaymentPlans,
