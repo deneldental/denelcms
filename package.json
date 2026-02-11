@@ -13,6 +13,8 @@
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
     "clean-dev": "rmdir /s /q .next && next dev",
+    "build:worker": "npx open-next build",
+    "deploy": "npx open-next build && wrangler deploy",
     "prepare": "husky"
   },
   "dependencies": {
@@ -74,8 +76,10 @@
     "eslint-config-next": "16.1.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "open-next": "^3.1.3",
     "prettier": "^3.8.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.64.0"
   }
 }
