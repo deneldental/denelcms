@@ -3,9 +3,6 @@ const config = {
         override: {
             wrapper: 'cloudflare',
             converter: 'edge',
-            incrementalCache: 'dummy',
-            tagCache: 'dummy',
-            queue: 'dummy',
         },
     },
     buildCommand: 'npm run build',
