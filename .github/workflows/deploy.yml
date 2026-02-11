@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Workers
+name: Deploy to Cloudflare Pages
 
 on:
   push:
@@ -8,7 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
     steps:
       - uses: actions/checkout@v4
       
@@ -21,18 +24,14 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Build Worker
-        run: npx open-next build
+      - name: Build with Cloudflare Pages
+        run: npx @cloudflare/next-on-pages
         env:
-          # OpenNext build might need some env vars if Next.js uses them at build time
-          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }} 
+          NODE_ENV: production
 
-      - name: Debug Output
-        run: ls -R .open-next
-
-      - name: Deploy to Cloudflare Workers
+      - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: pages deploy .vercel/output/static --project-name=denelcms

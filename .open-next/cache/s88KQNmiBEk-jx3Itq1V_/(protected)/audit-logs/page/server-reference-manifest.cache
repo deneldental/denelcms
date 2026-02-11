@@ -1,0 +1,1 @@
+{"type":"page","json":{"node":{"404cec8b48073ea16ec8296cd839047041b99460be":{"workers":{"app/(protected)/audit-logs/page":{"moduleId":135859,"async":true,"exportedName":"getAuditLogs","filename":"lib/actions/audit-logs.ts"}},"layer":{"app/(protected)/audit-logs/page":"rsc"},"exportedName":"getAuditLogs","filename":"lib/actions/audit-logs.ts"}},"edge":{}}}
