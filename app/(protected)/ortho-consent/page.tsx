@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { getOrthoConsentForms } from '@/lib/actions/ortho-consent'
 import { OrthoConsentContent } from './ortho-consent-content'
 import { getCurrentUser } from '@/lib/rbac'

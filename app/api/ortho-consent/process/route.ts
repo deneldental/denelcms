@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { NextRequest, NextResponse } from 'next/server'
 import { processUploadedConsentForm, validateConsentFormUpload } from '@/lib/pdf-utils'
 import { getCurrentUser } from '@/lib/rbac'

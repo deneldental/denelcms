@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { DashboardContent } from '@/components/dashboard/dashboard-content'
 import { ReceptionistDashboardContent } from '@/components/dashboard/receptionist-dashboard-content'
 import { DoctorDashboardContent } from '@/components/dashboard/doctor-dashboard-content'
