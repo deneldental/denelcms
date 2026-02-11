@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getAppointments } from '@/lib/actions/appointments'
 import { getDoctorUnavailability } from '@/lib/actions/doctor-availability'
 import { AppointmentsShell } from '@/components/appointments/appointments-shell'

@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getAuditLogs } from '@/lib/actions/audit-logs'
 import { AuditLogsContent } from './audit-logs-content'
 import { redirect } from 'next/navigation'

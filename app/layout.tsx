@@ -4,8 +4,6 @@ import NextTopLoader from 'nextjs-toploader'
 import { SonnerToaster } from '@/components/sonner-toaster'
 import './globals.css'
 
-export const runtime = 'edge';
-
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

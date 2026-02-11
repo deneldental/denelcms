@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getProducts } from '@/lib/actions/products'
 import { getProductsLockStatus } from '@/lib/actions/settings'
 import { ProductsClient } from './products-client'

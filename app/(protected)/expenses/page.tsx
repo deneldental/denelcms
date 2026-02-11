@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getExpenses } from '@/lib/actions/expenses'
 import { ExpensesClient } from './expenses-client'
 

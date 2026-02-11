@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { BulkSMSTab } from '@/components/messaging/bulk-sms-tab'
 import { BirthdaySMSTab } from '@/components/messaging/birthday-sms-tab'

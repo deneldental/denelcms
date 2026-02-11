@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getMedicalRecords, getPendingMedicalRecords } from '@/lib/actions/medical-records'
 import { MedicalRecordsClient } from './medical-records-client'
 import { getCurrentUser } from '@/lib/rbac'

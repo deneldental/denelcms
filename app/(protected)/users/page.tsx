@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getUsers } from '@/lib/actions/users'
 import { UserList } from '@/components/users/user-list'
 import { AddUserDialog } from '@/components/users/add-user-dialog'

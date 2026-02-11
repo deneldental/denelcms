@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { NextResponse } from 'next/server'
 import { generateConsentFormTemplate } from '@/lib/pdf-utils'
 import { getCurrentUser } from '@/lib/rbac'

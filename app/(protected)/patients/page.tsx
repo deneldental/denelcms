@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { getPatients } from '@/lib/actions/patients'
 import { PatientList } from '@/components/patients/patient-list'
 import { AddPatientDialog } from '@/components/patients/add-patient-dialog'

@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { ReportsContent } from '@/components/reports/reports-content'
 import { getCurrentUser } from '@/lib/rbac'
 import { db } from '@/lib/db'
